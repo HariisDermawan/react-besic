@@ -1,5 +1,6 @@
-import Footer from "./components/footer";
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+import { Outlet } from "react-router-dom";
 
 function App() {
   const listItem = [
@@ -24,14 +25,17 @@ function App() {
       url: "/todo",
     },
   ];
+
   return (
-    <>
+    <div className="min-h-screen bg-slate-100 flex flex-col">
       <Navigation listItem={listItem} />
-      <main className="h-screen">
-        <h1 className="text-3xl font-bold underline">Hallo World</h1>
+
+      <main className="flex-1">
+        <Outlet />
       </main>
+
       <Footer />
-    </>
+    </div>
   );
 }
 
