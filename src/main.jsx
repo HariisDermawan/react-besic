@@ -19,11 +19,8 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index element={<HomeView />} />
-
       <Route path="about" element={<AboutView />} />
-
       <Route path="contact" element={<ContactView />} />
-
       <Route path="todo" element={<TodoView />} />
     </Route>,
   ),

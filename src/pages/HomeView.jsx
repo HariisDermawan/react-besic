@@ -1,6 +1,10 @@
+import TitleHeader from "../components/TitleHeader";
+
 const HomeView = () => {
   return (
     <>
+     <TitleHeader title="home"/>
+
       <section className="min-h-screen bg-slate-900 text-white flex items-center">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
           <div>
@@ -37,6 +41,7 @@ const HomeView = () => {
           </div>
         </div>
       </section>
+
 
       <section className="py-28 bg-slate-100">
         <div className="max-w-7xl mx-auto px-6">
